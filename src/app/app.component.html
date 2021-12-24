@@ -1,4 +1,18 @@
 <div class="text-layout">
     <h1>{{ nombre | titlecase }}</h1>
-    <p-button label="Cambiar nombre" (click)="mostrarNombre()"></p-button>
+    <button type="button" (click)="mostrarNombre()" pButton label="Cambiar nombre" title="Cambiar nombre"
+        icon="pi pi-bell" iconPos="right" class="p-button-danger"></button>
 </div>
+<br>
+
+<p-card [header]="nombre | titlecase" subheader="Bach. Ing. Sistemas" [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="https://image.freepik.com/vector-gratis/fondo-banner-abstracto-formas-rojas_1361-3348.jpg">
+    </ng-template>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+    <ng-template pTemplate="footer">
+        <p-button label="Save" icon="pi pi-check"></p-button>
+        <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+    </ng-template>
+</p-card>
