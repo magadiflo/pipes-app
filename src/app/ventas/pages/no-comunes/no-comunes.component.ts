@@ -35,4 +35,11 @@ export class NoComunesComponent {
     this.clientes.splice(0, 1);
   }
 
+  //KeyValuePipe
+  persona = {
+    nombre: 'Martín',
+    edad: 35,
+    direccion: 'Chimbote, Perú'
+  }
+
 }
