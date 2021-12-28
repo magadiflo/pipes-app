@@ -13,8 +13,8 @@ export class NoComunesComponent {
   genero: string = 'masculino';
 
   invitacionMapa = {
-    'masculino' : 'invitarlo',
-    'femenino' : 'invitarla'
+    'masculino': 'invitarlo',
+    'femenino': 'invitarla'
   }
 
   //i18nPlural
@@ -24,6 +24,15 @@ export class NoComunesComponent {
     '=1': 'tenemos un cliente esperando.',
     '=2': 'tenemos 2 clientes esperando.',
     'other': 'tenemos # clientes esperando.'
+  }
+
+  cambiarCliente(): void {
+    this.nombre = 'Alicia';
+    this.genero = 'femenino';
+  }
+
+  borrarCliente(): void {
+    this.clientes.splice(0, 1);
   }
 
 }
