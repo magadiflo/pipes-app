@@ -42,4 +42,11 @@ export class NoComunesComponent {
     direccion: 'Chimbote, Perú'
   }
 
+  //JsonPipe
+  heroes = [
+    { nombre: 'Superman', vuela: true },
+    { nombre: 'Robin', vuela: false },
+    { nombre: 'Acuaman', vuela: false },
+  ]
+
 }

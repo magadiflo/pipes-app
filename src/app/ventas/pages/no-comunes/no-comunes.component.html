@@ -35,12 +35,17 @@
         </p-fieldset>
     </div>
     <div class="p-sm-12 p-md-6">
-        <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
-            <ul>
-                <li *ngFor="let item of persona | keyvalue">{{ item.key }} : {{ item.value }}</li>
-            </ul>            
+        <p-fieldset legend="Json Pipe" [toggleable]="true">
+            <pre>{{ heroes | json }}</pre>          
         </p-fieldset>
     </div>
+</div>
+<div class="p-sm-12 p-md-6">
+    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+        <ul>
+            <li *ngFor="let item of persona | keyvalue">{{ item.key }} : {{ item.value }}</li>
+        </ul>            
+    </p-fieldset>
 </div>
 
 
