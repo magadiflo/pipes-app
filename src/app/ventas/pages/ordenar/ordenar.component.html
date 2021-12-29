@@ -21,7 +21,7 @@
 </p-toolbar>
 <div class="p-grid">
     <div class="p-col p-mt-2">
-        <p-table [value]="heroes" responsiveLayout="scroll">
+        <p-table [value]="heroes | ordenar" responsiveLayout="scroll">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>
