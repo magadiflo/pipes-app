@@ -16,7 +16,7 @@ export class OrdenarComponent {
     { nombre: 'Batman', vuela: false, color: Color.negro },
     { nombre: 'Robin', vuela: false, color: Color.verde },
     { nombre: 'Daredevil', vuela: false, color: Color.rojo },
-    { nombre: 'Linterna Verde', vuela: false, color: Color.verde },
+    { nombre: 'Linterna Verde', vuela: true, color: Color.verde },
   ];
 
   cambiar(): void {
