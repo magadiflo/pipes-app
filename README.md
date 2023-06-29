@@ -116,3 +116,26 @@ export class AppComponent implements OnInit {
 
 }
 ```
+
+## Agrupando módulos de PrimeNg
+
+Una forma de poder definir y exportar todos los módulos que usaremos de **PrimeNg** es creando un módulo para ese fin. En nuestro caso, 
+crearemos un módulo llamado **PrimeNgModule** cuya funcionalidad será solo de poder definir los módulos de primerNg a usar y exportarlos,
+de esa manera tendremos centralizado y sabremos qué módulos de PrimeNg estamos usando en la aplicación.
+
+```typescript
+import { NgModule } from '@angular/core';
+
+import { MenuModule } from 'primeng/menu';
+
+@NgModule({
+  exports: [
+    MenuModule,
+  ]
+})
+export class PrimeNgModule { }
+```
+
+Es importante además, tener en cuenta que puede darse la posibilidad de que en un componente solo hagamos uso de, por ejemplo, un módulo
+pero como tenemos todos los módulos en un solo archivo, también se cargarán, esto quizá sea ineficiente, pero es una forma de trabajarlo, 
+lo que podríamos hacer es, agrupar en otros módulos aquellos que son usados con mucha frecuencia de los que no.
