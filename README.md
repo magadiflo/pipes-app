@@ -139,3 +139,26 @@ export class PrimeNgModule { }
 Es importante además, tener en cuenta que puede darse la posibilidad de que en un componente solo hagamos uso de, por ejemplo, un módulo
 pero como tenemos todos los módulos en un solo archivo, también se cargarán, esto quizá sea ineficiente, pero es una forma de trabajarlo, 
 lo que podríamos hacer es, agrupar en otros módulos aquellos que son usados con mucha frecuencia de los que no.
+
+--- 
+
+## [Instalando Primeflex css de PrimeNg](https://primeflex.org/installation)
+
+Nos va a permitir definir el **estilo responsive para nuestro diseño**, no solo con el tema de columnas y filas, 
+sino también con el tema del tamaño de la fuente, tipografía, espacio, etc.
+
+Ejecutar el siguiente comando en nuestro proyecto de Angular
+
+```bash
+npm install primeflex
+```
+
+Luego de la instalación incluir la librería agregándola desde el **angular.json**
+
+```json
+"styles": [
+  "...",
+  "node_modules/primeflex/primeflex.min.css",
+  "..."
+],
+```
