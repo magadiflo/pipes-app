@@ -162,3 +162,86 @@ Luego de la instalación incluir la librería agregándola desde el **angular.js
   "..."
 ],
 ```
+
+## Cambiar el idioma global y manualmente
+
+Lo que queremos hacer es cambiar el idioma que trae por defecto Angular que es el inglés, lo cambiaremos a español de Perú. Para evidenciar el cambio, crearemos un pipe con el 
+**locale** apuntando a 'es-PE':
+
+```html
+<li>{{customDate | date:'long':'GMT-5':'es-PE'}}</li>
+```
+Aún no hemos configurado el **locale** en **es-PE** por lo tanto se mostrará un error en la consola:
+
+````bash
+ERROR Error: NG02100: InvalidPipeArgument: 'NG0701: Missing locale data for the locale "es-PE".' for pipe 'DatePipe'
+````
+
+Por lo tanto nos toca configurar el idioma, para eso vamos al **app.module.ts**  e importamos el locale:
+
+```javascript
+// Configuración del locale de la app
+import localeEsPE from "@angular/common/locales/es-PE";
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEsPE);
+
+@NgModule({
+  /* omitted code */
+})
+export class AppModule { }
+```
+
+Luego de la configuración, veremos que al recargar el proyecto ahora nuestro pipe date con el locale en **es-PE** pues se mostrará para esa zona:
+
+```
+July 12, 2023 at 10:02:31 PM GMT-6
+July 12, 2023 at 11:02:31 PM GMT-5
+12 de julio de 2023, 23:02:31 GMT-5 <---- este es el pipe que tiene el locale 'es-PE', los demás están en el idioma inglés por defecto.
+```
+
+Si queremos cargar otro idioma, también lo podemos hacer, luego podemos usarlo como locale en el pipie date:
+
+```javascript
+// Configuración del locale de la app
+import localeEsPE from "@angular/common/locales/es-PE";
+import localeFrCA from "@angular/common/locales/fr-CA";
+
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEsPE);
+registerLocaleData(localeFrCA);
+
+@NgModule({
+  /* omitted code */
+})
+export class AppModule { }
+```
+
+```html
+<li>{{customDate | date:'long':'GMT-5':'fr-CA'}}</li>
+```
+
+**¿Pero como podría cambiar el idioma por defecto a español?**, esta pregunta es realizada porque en el caso anterior, lo que hicimos fue registrar un idioma y luego usarlos en nuestros pipes date, pero qué pasa sino queremos estar defiendo pipe por pipe, sino mas bien definir de manera global el idioma de esa manera se aplique en automático para los pipes. Para eso debemos registrar un provider con el idioma importado:
+
+```javascript
+// Configuración del locale de la app
+import localeEsPE from "@angular/common/locales/es-PE";
+import localeFrCA from "@angular/common/locales/fr-CA";
+
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEsPE);
+registerLocaleData(localeFrCA);
+
+@NgModule({
+  /*omitted code*/
+  providers: [
+    { provide: LOCALE_ID, useValue: 'es-PE' } //<-- Cambiando el idioma a español de manera global
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+Realizando la configuración anterior (provders) estamos diciéndole a Angular que el idioma por defecto ahora será el 'es-PE'.
