@@ -33,4 +33,11 @@ export class UncommonPageComponent {
     this.clients.splice(0, 1);
   }
 
+  //KeyValue Pipe ---------------------------------
+  public person = {
+    name: 'Martín',
+    age: 34,
+    address: 'Nuevo Chimbote, Perú'
+  }
+
 }
