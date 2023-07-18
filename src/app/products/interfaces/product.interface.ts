@@ -6,7 +6,7 @@ export interface Product {
   price?: number;
   quantity?: number;
   inventoryStatus?: string;
-  category?: string;
+  category?: 'Accessories' | 'Fitness' | 'Clothing' | 'Electronics';
   image?: string;
   rating?: number;
 }

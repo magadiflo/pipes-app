@@ -8,7 +8,7 @@ export class ProductService {
 
   constructor() { }
 
-  getProductsData() {
+  getProductsData(): Product[] {
     return [
       {
         id: '1000',

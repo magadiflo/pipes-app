@@ -23,7 +23,7 @@
     <tr>
       <td>{{ product.code }}</td>
       <td>{{ product.name }}</td>
-      <td>{{ product.category }}</td>
+      <td><span class="pi {{ product.category | categoryIcon }}"></span> {{ product.category }}</td>
       <td>{{ product.quantity }}</td>
     </tr>
   </ng-template>
