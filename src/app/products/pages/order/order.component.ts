@@ -11,7 +11,7 @@ import { Product } from '../../interfaces/product.interface';
 export class OrderComponent implements OnInit {
 
   public isUpperCase: boolean = false;
-  public products!: Product[];
+  public products: Product[] = [];
 
   toggleUpperCase(): void {
     this.isUpperCase = !this.isUpperCase;

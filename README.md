@@ -245,3 +245,14 @@ export class AppModule { }
 ```
 
 Realizando la configuración anterior (provders) estamos diciéndole a Angular que el idioma por defecto ahora será el 'es-PE'.
+
+## sortBy - Pipe personalizado
+
+Dentro del pipe personalizado utilizamos la palabra clave **keyof**. Esta palabra reservada determina todas las palabras claves del objeto al que está asociado. En nuestro ejemplo:
+
+```javascript
+transform(products: Product[], sortByProperty: keyof Product | null): unknown {
+    return null;
+}
+```
+En el código anterior estamos creando una variable llamada **sortByProperty** que será del tipo **keyof Product**, es decir, será permitidas cualquiera de las claves del objeto Product. En ese sentido, el **sortByProperty** puede tomar el valor de: **id, code, name, description, etc...**
