@@ -12,6 +12,7 @@ export class OrderComponent implements OnInit {
 
   public isUpperCase: boolean = false;
   public products: Product[] = [];
+  public orderBy: keyof Product | '' = '';
 
   toggleUpperCase(): void {
     this.isUpperCase = !this.isUpperCase;
@@ -25,6 +26,10 @@ export class OrderComponent implements OnInit {
       .then((data) => {
         this.products = data;
       });
+  }
+
+  changeOrder(propery: keyof Product): void {
+    this.orderBy = propery;
   }
 
 }
