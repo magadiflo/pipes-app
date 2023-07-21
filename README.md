@@ -142,10 +142,13 @@ lo que podríamos hacer es, agrupar en otros módulos aquellos que son usados co
 
 --- 
 
-## [Instalando Primeflex css de PrimeNg](https://primeflex.org/installation)
+## [Instalando Primeflex css](https://primeflex.org/installation)
 
 Nos va a permitir definir el **estilo responsive para nuestro diseño**, no solo con el tema de columnas y filas, 
-sino también con el tema del tamaño de la fuente, tipografía, espacio, etc.
+sino también con el tema del tamaño de la fuente, tipografía, espacio, etc. 
+
+PrimeFlex es una biblioteca de utilidades CSS que presenta varios helpers, como un **sistema de cuadrícula, flexbox, espaciado, elevación y más.**
+PrimeFlex no proporciona componentes UI específicos, sino que **se enfoca en proporcionar estilos y clases CSS para el diseño.**
 
 Ejecutar el siguiente comando en nuestro proyecto de Angular
 
@@ -162,6 +165,10 @@ Luego de la instalación incluir la librería agregándola desde el **angular.js
   "..."
 ],
 ```
+
+**NOTA**
+
+> PrimeFlex es una biblioteca de estilos y clases CSS para el diseño flexible, mientras que PrimeNG es una biblioteca de componentes UI que utiliza PrimeFlex como base para el diseño responsive.
 
 ## Cambiar el idioma global y manualmente
 
