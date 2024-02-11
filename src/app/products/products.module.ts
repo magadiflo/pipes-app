@@ -17,6 +17,7 @@ import { ReverseStringPipe } from './pipes/web-medium/reverse-string.pipe';
 import { FilterArrayPipe } from './pipes/web-medium/filter-array.pipe';
 import { TruncateTextPipe } from './pipes/web-medium/truncate-text.pipe';
 import { SortArrayPipe } from './pipes/web-medium/sort-array.pipe';
+import { CurrencyConvertPipe } from './pipes/web-medium/currency-convert.pipe';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { SortArrayPipe } from './pipes/web-medium/sort-array.pipe';
     FilterArrayPipe,
     TruncateTextPipe,
     SortArrayPipe,
+    CurrencyConvertPipe,
   ],
   imports: [
     CommonModule,

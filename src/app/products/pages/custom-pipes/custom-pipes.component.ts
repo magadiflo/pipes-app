@@ -24,6 +24,9 @@ export class CustomPipesComponent implements OnInit {
 
   //* 5. Sort Array Pipe
 
+  //* 6. Currency Convert Pipe
+  public salary = 100;
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
