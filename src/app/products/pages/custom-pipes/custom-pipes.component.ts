@@ -10,4 +10,7 @@ export class CustomPipesComponent {
   //* 1. Uppercase First Pipe
   public phrase = 'tengo EL ORGULLO DE ser Peruano Y Soy FeliZ.';
 
+  //* 2. Reverse String Pipe
+  public course = 'Angular';
+
 }

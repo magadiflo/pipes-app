@@ -13,6 +13,7 @@ import { SortByPipe } from './pipes/sort-by.pipe';
 import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.component';
 
 import { UppercaseFirstPipe } from './pipes/web-medium/uppercase-first.pipe';
+import { ReverseStringPipe } from './pipes/web-medium/reverse-string.pipe';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { UppercaseFirstPipe } from './pipes/web-medium/uppercase-first.pipe';
     SortByPipe,
     CustomPipesComponent,
     UppercaseFirstPipe,
+    ReverseStringPipe,
   ],
   imports: [
     CommonModule,
