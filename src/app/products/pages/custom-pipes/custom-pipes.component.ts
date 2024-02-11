@@ -33,6 +33,9 @@ export class CustomPipesComponent implements OnInit {
   //* 8. File Size Pipe
   public fileSize = 1124;
 
+  //* 9. Percent Change Pipe
+  public currentValue = 150;
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {

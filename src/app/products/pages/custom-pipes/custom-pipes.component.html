@@ -83,4 +83,11 @@
       {{ fileSize | fileSize }}
     </p-card>
   </div>
+  <div class="col-12 sm:col-6 md:col-4">
+    <p-card header="9. Percent Change Pipe">
+      {{ currentValue | percentChange:100 }}
+      <br>
+      {{ 25 | percentChange:50 }}
+    </p-card>
+  </div>
 </div>

@@ -20,6 +20,7 @@ import { SortArrayPipe } from './pipes/web-medium/sort-array.pipe';
 import { CurrencyConvertPipe } from './pipes/web-medium/currency-convert.pipe';
 import { PhoneNumberFormatterPipe } from './pipes/web-medium/phone-number-formatter.pipe';
 import { FileSizePipe } from './pipes/web-medium/file-size.pipe';
+import { PercentChangePipe } from './pipes/web-medium/percent-change.pipe';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { FileSizePipe } from './pipes/web-medium/file-size.pipe';
     CurrencyConvertPipe,
     PhoneNumberFormatterPipe,
     FileSizePipe,
+    PercentChangePipe,
   ],
   imports: [
     CommonModule,
