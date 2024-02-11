@@ -10,6 +10,18 @@ import { OrderComponent } from './pages/order/order.component';
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { CategoryIconPipe } from './pipes/category-icon.pipe';
 import { SortByPipe } from './pipes/sort-by.pipe';
+import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.component';
+
+import { UppercaseFirstPipe } from './pipes/web-medium/uppercase-first.pipe';
+import { ReverseStringPipe } from './pipes/web-medium/reverse-string.pipe';
+import { FilterArrayPipe } from './pipes/web-medium/filter-array.pipe';
+import { TruncateTextPipe } from './pipes/web-medium/truncate-text.pipe';
+import { SortArrayPipe } from './pipes/web-medium/sort-array.pipe';
+import { CurrencyConvertPipe } from './pipes/web-medium/currency-convert.pipe';
+import { PhoneNumberFormatterPipe } from './pipes/web-medium/phone-number-formatter.pipe';
+import { FileSizePipe } from './pipes/web-medium/file-size.pipe';
+import { PercentChangePipe } from './pipes/web-medium/percent-change.pipe';
+import { StripHtmlTagsPipe } from './pipes/web-medium/strip-html-tags.pipe';
 
 
 @NgModule({
@@ -20,7 +32,18 @@ import { SortByPipe } from './pipes/sort-by.pipe';
     OrderComponent,
     ToggleCasePipe,
     CategoryIconPipe,
-    SortByPipe
+    SortByPipe,
+    CustomPipesComponent,
+    UppercaseFirstPipe,
+    ReverseStringPipe,
+    FilterArrayPipe,
+    TruncateTextPipe,
+    SortArrayPipe,
+    CurrencyConvertPipe,
+    PhoneNumberFormatterPipe,
+    FileSizePipe,
+    PercentChangePipe,
+    StripHtmlTagsPipe,
   ],
   imports: [
     CommonModule,

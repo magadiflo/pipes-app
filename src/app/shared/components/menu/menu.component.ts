@@ -42,7 +42,18 @@ export class MenuComponent implements OnInit {
             routerLink: ['/custom']
           }
         ]
-      }
+      },
+      {
+        label: 'Custom pipes (Web medium)',
+        icon: 'pi pi-cog',
+        items: [
+          {
+            label: 'Custom pipes',
+            icon: 'pi pi-flag',
+            routerLink: ['/custom-pipes']
+          }
+        ]
+      },
     ];
   }
 }
