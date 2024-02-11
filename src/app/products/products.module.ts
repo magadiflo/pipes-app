@@ -21,6 +21,7 @@ import { CurrencyConvertPipe } from './pipes/web-medium/currency-convert.pipe';
 import { PhoneNumberFormatterPipe } from './pipes/web-medium/phone-number-formatter.pipe';
 import { FileSizePipe } from './pipes/web-medium/file-size.pipe';
 import { PercentChangePipe } from './pipes/web-medium/percent-change.pipe';
+import { StripHtmlTagsPipe } from './pipes/web-medium/strip-html-tags.pipe';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { PercentChangePipe } from './pipes/web-medium/percent-change.pipe';
     PhoneNumberFormatterPipe,
     FileSizePipe,
     PercentChangePipe,
+    StripHtmlTagsPipe,
   ],
   imports: [
     CommonModule,

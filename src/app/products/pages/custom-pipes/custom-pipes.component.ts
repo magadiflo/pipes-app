@@ -36,6 +36,9 @@ export class CustomPipesComponent implements OnInit {
   //* 9. Percent Change Pipe
   public currentValue = 150;
 
+  //* 10. Strip HTML Tags Pipe
+  public textWithHtml = '<p>Este es texto con <b>HTML</b> incluído será extraído</p>';
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
