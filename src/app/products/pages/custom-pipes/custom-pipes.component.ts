@@ -27,6 +27,9 @@ export class CustomPipesComponent implements OnInit {
   //* 6. Currency Convert Pipe
   public salary = 100;
 
+  //* 7. Phone Number Formatter Pipe
+  public phone = '51943859678';
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {

@@ -18,6 +18,7 @@ import { FilterArrayPipe } from './pipes/web-medium/filter-array.pipe';
 import { TruncateTextPipe } from './pipes/web-medium/truncate-text.pipe';
 import { SortArrayPipe } from './pipes/web-medium/sort-array.pipe';
 import { CurrencyConvertPipe } from './pipes/web-medium/currency-convert.pipe';
+import { PhoneNumberFormatterPipe } from './pipes/web-medium/phone-number-formatter.pipe';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { CurrencyConvertPipe } from './pipes/web-medium/currency-convert.pipe';
     TruncateTextPipe,
     SortArrayPipe,
     CurrencyConvertPipe,
+    PhoneNumberFormatterPipe,
   ],
   imports: [
     CommonModule,
