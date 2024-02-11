@@ -43,4 +43,26 @@
       {{ text | truncateText:20 }}
     </p-card>
   </div>
+  <div class="col-12 sm:col-6 md:col-4">
+    <p-card header="5. Sort Array Pipe">
+      <p-table [value]="products | filterArray:'category':'Electronics' | sortArray:'quantity':'desc'">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{ product.code }}</td>
+            <td>{{ product.name }}</td>
+            <td><span class="pi {{ product.category | categoryIcon }}"></span> {{ product.category }}</td>
+            <td>{{ product.quantity }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
 </div>
