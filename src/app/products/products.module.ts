@@ -19,6 +19,7 @@ import { TruncateTextPipe } from './pipes/web-medium/truncate-text.pipe';
 import { SortArrayPipe } from './pipes/web-medium/sort-array.pipe';
 import { CurrencyConvertPipe } from './pipes/web-medium/currency-convert.pipe';
 import { PhoneNumberFormatterPipe } from './pipes/web-medium/phone-number-formatter.pipe';
+import { FileSizePipe } from './pipes/web-medium/file-size.pipe';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { PhoneNumberFormatterPipe } from './pipes/web-medium/phone-number-format
     SortArrayPipe,
     CurrencyConvertPipe,
     PhoneNumberFormatterPipe,
+    FileSizePipe,
   ],
   imports: [
     CommonModule,

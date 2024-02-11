@@ -30,6 +30,9 @@ export class CustomPipesComponent implements OnInit {
   //* 7. Phone Number Formatter Pipe
   public phone = '51943859678';
 
+  //* 8. File Size Pipe
+  public fileSize = 1124;
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
