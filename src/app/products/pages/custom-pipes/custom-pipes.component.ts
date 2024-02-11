@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CustomPipesComponent {
 
+  //* 1. Uppercase First Pipe
+  public phrase = 'tengo EL ORGULLO DE ser Peruano Y Soy FeliZ.';
+
 }

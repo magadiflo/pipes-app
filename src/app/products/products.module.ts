@@ -12,6 +12,8 @@ import { CategoryIconPipe } from './pipes/category-icon.pipe';
 import { SortByPipe } from './pipes/sort-by.pipe';
 import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.component';
 
+import { UppercaseFirstPipe } from './pipes/web-medium/uppercase-first.pipe';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.componen
     ToggleCasePipe,
     CategoryIconPipe,
     SortByPipe,
-    CustomPipesComponent
+    CustomPipesComponent,
+    UppercaseFirstPipe,
   ],
   imports: [
     CommonModule,
