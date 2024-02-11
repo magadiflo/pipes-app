@@ -15,6 +15,7 @@ import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.componen
 import { UppercaseFirstPipe } from './pipes/web-medium/uppercase-first.pipe';
 import { ReverseStringPipe } from './pipes/web-medium/reverse-string.pipe';
 import { FilterArrayPipe } from './pipes/web-medium/filter-array.pipe';
+import { TruncateTextPipe } from './pipes/web-medium/truncate-text.pipe';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { FilterArrayPipe } from './pipes/web-medium/filter-array.pipe';
     UppercaseFirstPipe,
     ReverseStringPipe,
     FilterArrayPipe,
+    TruncateTextPipe,
   ],
   imports: [
     CommonModule,

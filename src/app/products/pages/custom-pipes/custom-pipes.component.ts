@@ -19,6 +19,9 @@ export class CustomPipesComponent implements OnInit {
   //* 3. Filter Array Pipe
   public products: Product[] = [];
 
+  //* 4. Truncate Text Pipe
+  public text = 'This is a long text that should be truncated';
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
