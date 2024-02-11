@@ -10,6 +10,7 @@ import { OrderComponent } from './pages/order/order.component';
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { CategoryIconPipe } from './pipes/category-icon.pipe';
 import { SortByPipe } from './pipes/sort-by.pipe';
+import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SortByPipe } from './pipes/sort-by.pipe';
     OrderComponent,
     ToggleCasePipe,
     CategoryIconPipe,
-    SortByPipe
+    SortByPipe,
+    CustomPipesComponent
   ],
   imports: [
     CommonModule,
